@@ -20,6 +20,7 @@ int main( void )
     
     addOrRemove( head );
     writeTree( head );
+    destroyTree( head );
 
 
 
