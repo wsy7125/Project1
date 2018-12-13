@@ -17,8 +17,9 @@ int main( void )
     growTree( head );
     setZero( head );
     setFlag( head,time );
-
+    
     addOrRemove( head );
+    writeTree( head );
 
 
 
