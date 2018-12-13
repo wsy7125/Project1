@@ -5,8 +5,6 @@
 int main( void )
 
 {
-    int add_number=0;
-    int remove_number=0;
     double time=0.0;
 
     Node *head;
@@ -20,7 +18,7 @@ int main( void )
 
     setFlag( head,time );
 
-    addOrRemove( head,add_number,remove_number );
+    addOrRemove( head );
 
 
 
