@@ -82,7 +82,29 @@ double nodeValue( Node *node, double time )
 }
 
 // Data function
+void setZero( Node *node )
 
+{
+
+    int i;
+    if( node->child[0] == NULL )
+        node->flag=0;
+    else
+    {
+
+        for ( i=0; i<4; ++i )
+        {
+
+            setZero( node->child[i] );
+
+        }
+
+        node->flag=0;
+    }
+
+    return;
+
+}
 
 
 void setFlag( Node *node,double time )
